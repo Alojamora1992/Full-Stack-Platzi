@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Merriweather:ital,wght@0,300;0,900;1,400&family=Rubik+Vinyl&family=Shrikhand&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <style>
+         :root{
+            --very-ligth-pink: #C7C7C7;
+            --white: #FFFFFF;
+            --text-input-field: #F7F7F7;
+            --black: #000000;
+            --hospital-green: #ACD9B2;
+            --sm: 14px;
+            --md: 16px;
+            --lg: 18px;
+        }
+        body{
+            margin: 0;
+            font-family: 'Marcellus', serif;
+            /*
+            font-family: 'Merriweather', serif;
+            font-family: 'Rubik Vinyl', cursive;
+            font-family: 'Shrikhand', cursive; */
+        }
+        .cards-container{
+            display: grid;
+            grid-template-columns: repeat(auto-fill, 240px);
+            gap: 24px;
+            place-content: center;
+        }
+        .product-card{
+            width: 240px;
+        } 
+        .product-card img{
+            width: 240px;
+            height: 240px;
+            border-radius: 20px;
+            object-fit: cover; /*Propiedad que mantiene el tamaño de la imagen*/
+        }
+        .product-info{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 12px;
+        }
+        .product-info figure img{
+            width: 40px;
+            height: 40px;
+        }
+        .product-info figure {
+            margin: 0;
+        }
+        .product-info div p:nth-child(1){
+            font-weight: bold;
+            font-size: var(--md);
+            margin-top: 0px;
+            margin-bottom: 4px;
+        }
+        .product-info div p:nth-child(2){
+            color: var(--very-ligth-pink);
+            font-size: var(--sm);
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+        @media (max-width:640px){
+            .cards-container{
+            grid-template-columns: repeat(auto-fill, 140px);
+            }
+            .product-card{
+                width: 140px;
+            } 
+            .product-card img{
+                width: 140px;
+                height: 140px;              
+            }
+        }
+      
+    </style>
+</head>
+<body>
+    <section class="main-container">
+        <div class="cards-container">
+
+            <div class="product-card">
+                <img src="https://images.pexels.com/photos/725993/pexels-photo-725993.jpeg?auto=compress&cs=tinysrgb&w=300" alt="">
+                <div class="product-info">
+                    <div>
+                        <p>$10,00</p>
+                        <p>Bread of chesse</p>
+                    </div>
+                    <figure>
+                        <img src="../Icons/bt_add_to_cart.svg" alt="">
+                    </figure>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="https://images.pexels.com/photos/209206/pexels-photo-209206.jpeg?auto=compress&cs=tinysrgb&w=300" alt="">
+                <div class="product-info">
+                    <div>
+                        <p>$10,00</p>
+                        <p>Bread of chesse</p>
+                    </div>
+                    <figure>
+                        <img src="../Icons/bt_add_to_cart.svg" alt="">
+                    </figure>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="https://images.pexels.com/photos/1118332/pexels-photo-1118332.jpeg?auto=compress&cs=tinysrgb&w=300" alt="">
+                <div class="product-info">
+                    <div>
+                        <p>$10,00</p>
+                        <p>Bread of chesse</p>
+                    </div>
+                    <figure>
+                        <img src="../Icons/bt_add_to_cart.svg" alt="">
+                    </figure>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="https://images.pexels.com/photos/209196/pexels-photo-209196.jpeg?auto=compress&cs=tinysrgb&w=300" alt="">
+                <div class="product-info">
+                    <div>
+                        <p>$10,00</p>
+                        <p>Bread of chesse</p>
+                    </div>
+                    <figure>
+                        <img src="../Icons/bt_add_to_cart.svg" alt="">
+                    </figure>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="https://images.pexels.com/photos/1775037/pexels-photo-1775037.jpeg?auto=compress&cs=tinysrgb&w=300" alt="">
+                <div class="product-info">
+                    <div>
+                        <p>$10,00</p>
+                        <p>Bread of chesse</p>
+                    </div>
+                    <figure>
+                        <img src="../Icons/bt_add_to_cart.svg" alt="">
+                    </figure>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="https://images.pexels.com/photos/2067408/pexels-photo-2067408.jpeg?auto=compress&cs=tinysrgb&w=300" alt="">
+                <div class="product-info">
+                    <div>
+                        <p>$10,00</p>
+                        <p>Bread of chesse</p>
+                    </div>
+                    <figure>
+                        <img src="../Icons/bt_add_to_cart.svg" alt="">
+                    </figure>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="https://images.pexels.com/photos/2000498/pexels-photo-2000498.jpeg?auto=compress&cs=tinysrgb&w=300" alt="">
+                <div class="product-info">
+                    <div>
+                        <p>$10,00</p>
+                        <p>Bread of chesse</p>
+                    </div>
+                    <figure>
+                        <img src="../Icons/bt_add_to_cart.svg" alt="">
+                    </figure>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="https://images.pexels.com/photos/792404/pexels-photo-792404.jpeg?auto=compress&cs=tinysrgb&w=300" alt="">
+                <div class="product-info">
+                    <div>
+                        <p>$10,00</p>
+                        <p>Bread of chesse</p>
+                    </div>
+                    <figure>
+                        <img src="../Icons/bt_add_to_cart.svg" alt="">
+                    </figure>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="https://images.pexels.com/photos/6660187/pexels-photo-6660187.jpeg?auto=compress&cs=tinysrgb&w=300" alt="">
+                <div class="product-info">
+                    <div>
+                        <p>$10,00</p>
+                        <p>Bread of chesse</p>
+                    </div>
+                    <figure>
+                        <img src="../Icons/bt_add_to_cart.svg" alt="">
+                    </figure>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="https://images.pexels.com/photos/1002322/pexels-photo-1002322.jpeg?auto=compress&cs=tinysrgb&w=300" alt="">
+                <div class="product-info">
+                    <div>
+                        <p>$10,00</p>
+                        <p>Bread of chesse</p>
+                    </div>
+                    <figure>
+                        <img src="../Icons/bt_add_to_cart.svg" alt="">
+                    </figure>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="https://images.pexels.com/photos/5237707/pexels-photo-5237707.jpeg?auto=compress&cs=tinysrgb&w=300" alt="">
+                <div class="product-info">
+                    <div>
+                        <p>$10,00</p>
+                        <p>Bread of chesse</p>
+                    </div>
+                    <figure>
+                        <img src="../Icons/bt_add_to_cart.svg" alt="">
+                    </figure>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="https://images.pexels.com/photos/764928/pexels-photo-764928.jpeg?auto=compress&cs=tinysrgb&w=300" alt="">
+                <div class="product-info">
+                    <div>
+                        <p>$10,00</p>
+                        <p>Bread of chesse</p>
+                    </div>
+                    <figure>
+                        <img src="../Icons/bt_add_to_cart.svg" alt="">
+                    </figure>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="https://images.pexels.com/photos/3806365/pexels-photo-3806365.jpeg?auto=compress&cs=tinysrgb&w=300" alt="">
+                <div class="product-info">
+                    <div>
+                        <p>$10,00</p>
+                        <p>Bread of chesse</p>
+                    </div>
+                    <figure>
+                        <img src="../Icons/bt_add_to_cart.svg" alt="">
+                    </figure>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="https://images.pexels.com/photos/5588991/pexels-photo-5588991.jpeg?auto=compress&cs=tinysrgb&w=300" alt="">
+                <div class="product-info">
+                    <div>
+                        <p>$10,00</p>
+                        <p>Bread of chesse</p>
+                    </div>
+                    <figure>
+                        <img src="../Icons/bt_add_to_cart.svg" alt="">
+                    </figure>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="https://images.pexels.com/photos/1656680/pexels-photo-1656680.jpeg?auto=compress&cs=tinysrgb&w=300" alt="">
+                <div class="product-info">
+                    <div>
+                        <p>$10,00</p>
+                        <p>Bread of chesse</p>
+                    </div>
+                    <figure>
+                        <img src="../Icons/bt_add_to_cart.svg" alt="">
+                    </figure>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="https://images.pexels.com/photos/4197913/pexels-photo-4197913.jpeg?auto=compress&cs=tinysrgb&w=300" alt="">
+                <div class="product-info">
+                    <div>
+                        <p>$10,00</p>
+                        <p>Bread of chesse</p>
+                    </div>
+                    <figure>
+                        <img src="../Icons/bt_add_to_cart.svg" alt="">
+                    </figure>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    
+</body>
+</html>
