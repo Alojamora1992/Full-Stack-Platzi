@@ -6,7 +6,10 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "keywords": [
+    "javascript",
+    "ecmascript"
+  ],
+  "author": "Carlos Posada <carlos@platzi.com>",
+  "license": "MIT"
 }
